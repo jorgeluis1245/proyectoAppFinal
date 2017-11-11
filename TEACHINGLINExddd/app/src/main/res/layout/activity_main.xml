@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.material.lineteachin3.MainActivity">
+
+    <ImageView
+        android:layout_width="184dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/icon"
+        app:layout_constraintBottom_toTopOf="@+id/Iniciar_Seccion"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:id="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarce Como:"
+        android:textColor="@android:color/white"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/Iniciar_Seccion"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/Iniciar_Seccion" />
+
+    <Button
+        android:id="@+id/Students"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/Amarillo"
+        android:text="Estudiante"
+        android:textColor="@android:color/white"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/Iniciar_Seccion"
+        android:layout_marginTop="49dp"
+        app:layout_constraintTop_toBottomOf="@+id/Iniciar_Seccion"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/Iniciar_Seccion" />
+
+    <Button
+        android:id="@+id/profe"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/Amarillo"
+        android:text="Profesor"
+        android:textColor="@android:color/white"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/Students"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/Students"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/Students" />
+
+    <Button
+        android:id="@+id/Iniciar_Seccion"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:background="@color/Amarillo"
+        android:text="Iniciar Sección"
+        android:textColor="@android:color/white"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="169dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnShart"
+        android:layout_width="160dp"
+        android:layout_height="78dp"
+        android:onClick="oncharki"
+        android:layout_marginBottom="49dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/fc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/btnayuda"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:background="@color/Amarillo"
+        android:text="AYUDA"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="10sp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        android:layout_marginLeft="16dp" />
+
+
+</android.support.constraint.ConstraintLayout>
